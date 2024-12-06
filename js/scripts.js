@@ -53,3 +53,13 @@ window.addEventListener('scroll', animateVideos);
 
 // Run on load in case videos are already in view
 window.addEventListener('DOMContentLoaded', animateVideos);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const portfolioLink = document.querySelector('#folder-icon a');
+
+    portfolioLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'portfolio.html';
+    });
+});
